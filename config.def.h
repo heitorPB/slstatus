@@ -64,7 +64,7 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	{ load_avg, "CPU %s ", NULL},
-	{ temp, "%sºC ", "/sys/class/thermal/thermal_zone0/temp" },
+	{ temp, "%sºC ", "/sys/class/hwmon/hwmon7/temp1_input" },
 	{ ram_free, "| RAM %s ", NULL },
 	{ swap_free, "SWAP %s ", NULL },
 	{ disk_free, "| / %s ", "/" },
